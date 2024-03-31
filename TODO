@@ -1,0 +1,21 @@
+TODO:
+
+Replace *rectangle* and *surface* with *sprite* for game objects
+
+Add turn-based game logic:
+	Player phase - waits for player input to end
+	Enemy phase - enemy actions
+
+Alternatively - initiative/speed based order?
+	highest speed goes first regardless if player or computer
+	what if more than 1 has same speed?
+	what if speed changes?
+	allow more than one action per turn depending on speed?
+
+
+Idea for first level/map/dungeon/whatever:
+	10 enemy groups
+	each group 1-3 enemies (Orenians with swords)
+	number of enemeies random each group
+	higher numbers less likely
+	after the 10 groups - 1 boss (orenian with hammer)
