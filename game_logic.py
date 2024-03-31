@@ -50,11 +50,18 @@ def Run():
     return True
 
 def Exploring():
+    # check for enemies, if not empty switch to combat, else pop from level_pods
+    # if level_pods is empty switch to game over (Victory)
     pass
 
 def Combat():
+    # if player dies switch to game over (Defeat)
+    # if player kills all enemies switch to exploring
     pass
 
 def GameOver():
+    # take argument to determine win or lose
+    # end game on player confirmation (input)
+    # highscore?
     pass
 
