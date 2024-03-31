@@ -32,7 +32,29 @@ def Run():
     for each in pygame.event.get():
         if each.type == pygame.QUIT:
             return False
-        
+
+    global current_phase
+    global last_phase
+    if current_phase != last_phase:
+        print (f"Phase changed from {last_phase} to {current_phase}") # add logic for when phase changes
+        last_phase = current_phase
     
+    match current_phase:
+        case GamePhase.Exploring: Exploring()
+        case GamePhase.Combat: Combat()
+        case GamePhase.GameOver: GameOver()
+        case _:
+            print (f"Invalid phase {current_phase}")
+            current_phase = GamePhase.Exploring  
 
     return True
+
+def Exploring():
+    pass
+
+def Combat():
+    pass
+
+def GameOver():
+    pass
+
